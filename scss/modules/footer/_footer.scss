@@ -1,0 +1,101 @@
+.footer {
+    display: flex;
+
+    .leftSide {
+        display: flex;
+        justify-content: center;
+        padding: 120px 0 110px 0;
+        width: 50%;
+
+        .logo {
+            margin: 0 115px 0 185px;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            padding-right: 115px;
+
+            .item {
+                margin-bottom: 20px;
+                
+
+                .link {
+                    font-family: $font-lato;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFDFC0;
+                }
+            }
+        }
+    }
+
+
+
+    .rightSide {
+        background: #271B16;
+        width: 50%;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+
+        .select {
+            margin-top: 109px;
+            margin-right: 100px;
+            margin-left: 115px;
+
+
+            .item {
+                font-family: $font-lato;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFDFC0;
+                margin-bottom: 20px;
+            }
+
+            .link {
+                font-family: $font-lato;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFDFC0;
+            }
+        }
+
+
+
+        .social_wrapper {
+            width: 165px;
+            padding-top: 110px;
+            margin-right: 150px;
+
+            .social {
+                display: flex;
+                margin-bottom: 15px;
+
+                .item {
+                    margin-right: 45px;
+                    width: 24px;
+                }
+
+                .item:last-child{
+                    margin-right: 0;
+                }
+            }
+
+            .text {
+                font-family: $font-lato;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 150%;
+                color: #FFDFC0;
+                width: 100%;
+            }
+        }
+    }
+}
