@@ -1,0 +1,51 @@
+.header {
+    background: url(../images/header/bg_header.png) center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: $font-lato;
+    box-shadow: -10px 100px 100px -25px #000000 inset;
+
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .slogan {
+        margin: 0 auto;
+        text-align: center;
+        width: 640px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 150%;
+        color: #FFF9EF;
+        margin-bottom: 32px;
+        background: radial-gradient(50% 50% at 50% 50%, #130A0B 0%, rgba(19, 10, 11, 0) 100%);
+    }
+
+    .time_work {
+
+        background: radial-gradient(50% 50% at 50% 50%, #130A0B 0%, rgba(19, 10, 11, 0) 100%);
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFF9EF;
+        width: 550px;
+
+        .date {
+            width: 100%;
+
+            .time {
+                font-weight: 300;
+            }
+        }
+
+        padding-bottom: 75px;
+    }
+}

@@ -1,0 +1,32 @@
+.description {
+    background: #271B16;
+    width: 100%;
+    min-height: 670px;
+    margin-top: 270px;
+    display: flex;
+    padding: 35px 0;
+    justify-content: center;
+
+
+    &__images {
+        min-width: 410px;
+        min-height: 600px;
+        margin-left: 220px;
+        margin-right: 105px;
+    }
+
+    &__text {
+        width: 520px;
+        height: 600px;
+        padding: 140px 70px;
+        margin-right: 185px;
+        border: 0.5px solid #FFDFC0;
+        font-family: $font-lato;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 160%;
+        text-align: center;
+        color: #FFF9EF;
+    }
+
+}

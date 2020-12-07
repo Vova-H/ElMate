@@ -1,0 +1,87 @@
+.review {
+    display: flex;
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 50px;
+
+    .box {
+        margin-left: 150px;
+
+        .avatar_wrapper {
+            position: absolute;
+            z-index: 99;
+            width: 95px;
+            height: 95px;
+            bottom: 0;
+            left: 0px;
+            background-color: #FFDFC0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+    
+            .avatar {
+                min-width: 85px;
+                min-height: 85px;
+            }
+        }
+        .wrapper {
+            width: 480px;
+            min-height: 150px;
+            background: #FFDFC0;
+            border-radius: 18px;
+            position: relative;
+
+            .title {
+                display: flex;
+                padding-top: 18px;
+
+                &__logo {
+                    margin-left: 25px ;
+                    margin-right: 15px;
+                    // margin-top: 5px ;
+                }
+
+                &__name {
+                    font-family: $font-lato;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #271B16;
+                    margin-right: 15px;
+                }
+
+                &__star {
+                    display: flex;
+                    padding-top: 3px;
+                }
+            }
+
+            .text {
+                padding-left: 70px;
+                padding-right: 25px;
+                font-family: $font-lato;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 150%;
+                color: #271B16;
+                padding: 0px 24px 22px 65px
+            }
+        }
+
+        .wrapper::before {
+            content: ' ';
+            position: absolute;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            left: -50px;
+            border-style: solid;
+            border-width: 0 0 40px 70px;
+            border-color: transparent transparent #FFDFC0 transparent;
+            border-bottom-left-radius: 15px;
+
+        }
+    }
+}

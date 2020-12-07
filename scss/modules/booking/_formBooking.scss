@@ -1,0 +1,52 @@
+.formBooking {
+    width: 780px;
+    height: 360px;
+    background: #FFF1E3;
+    text-align: center;
+
+    &__title {
+        padding-top: 30px;
+        font-family: $font-prata;
+        font-size: 36px;
+        color: rgba(39, 27, 22, 1);
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        color: rgba(249, 126, 5, 1);
+        font-family: $font-lato;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .fields{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        color: rgba(181, 152, 141, 1);
+        margin-bottom: 50px;
+
+        .field{
+            background: #FFF1E3;
+            color: rgba(181, 152, 141, 1);
+            opacity: .8;
+            width: 27%;
+            // position: relative;
+            border-bottom: 1px solid #FFCA96;
+            padding-bottom: 2px;
+            margin-right: 3%;
+            margin-bottom: 20px;
+        }
+
+        // .field::after{
+        //     content: '';
+        //     position: absolute;
+        //     width: 100%;
+        //     height: ;
+        // }
+    }
+}
