@@ -22,11 +22,27 @@
 
                 .link {
                     font-family: $font-lato;
-                    font-style: normal;
                     font-weight: 300;
                     font-size: 16px;
                     line-height: 19px;
                     color: #FFDFC0;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: currentColor;
+                        width: 0;
+                        height: 1px;
+                        left: 50%;
+                        bottom: -2px;
+                        transition: all .3s;
+                    }
+    
+                    &:hover::after {
+                        width: 100%;
+                        left: 0;
+                    }
                 }
             }
         }
@@ -64,6 +80,23 @@
                 font-size: 16px;
                 line-height: 19px;
                 color: #FFDFC0;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: currentColor;
+                    width: 0;
+                    height: 1px;
+                    left: 50%;
+                    bottom: -2px;
+                    transition: all .3s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    left: 0;
+                }
             }
         }
 
@@ -78,9 +111,12 @@
                 display: flex;
                 margin-bottom: 15px;
 
+                
+
                 .item {
                     margin-right: 45px;
                     width: 24px;
+                    
                 }
 
                 .item:last-child{
