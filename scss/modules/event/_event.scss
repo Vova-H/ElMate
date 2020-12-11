@@ -47,44 +47,47 @@
                 background: linear-gradient(270deg, #020202 0%, rgba(4, 4, 4, 0) 100%);
 
                 &__title {
+                    font-family: $font-prata;
                     font-size: 22px;
+
                 }
-    
+
                 &__date {
                     font-family: $font-lato;
                     font-weight: 300;
                 }
-    
+
                 &__price {
                     font-family: $font-lato;
                     font-weight: 400;
                     margin-bottom: 65px;
                 }
 
-                &__select{
+                &__select {
                     display: flex;
                     justify-content: center;
-                    
-                    
-                    .item{
+
+
+                    .item {
                         @include size(16px);
                         background: rgba(255, 223, 192, 0.2);
-                        border-radius: 50%; 
+                        border-radius: 50%;
                         border: 1px solid #FFDFC0;
 
-                        &:first-child{
+                        &:first-child {
                             background: rgba(255, 223, 192, 1);
                         }
-                        
+
                     }
-                    .item:not(:last-child){
+
+                    .item:not(:last-child) {
                         margin-right: 15px;
                     }
                 }
 
             }
 
-           
+
 
         }
     }

@@ -109,7 +109,6 @@ body a {
 .header {
   background: url(../images/header/bg_header.png) center no-repeat;
   background-size: cover;
-  min-height: 100vh;
   font-family: "Lato", sans-serif;
   -webkit-box-shadow: -10px 100px 100px -25px #000000 inset;
           box-shadow: -10px 100px 100px -25px #000000 inset;
@@ -119,9 +118,15 @@ body a {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFBF1 0%, rgba(255, 252, 245, 0) 100%);
 }
 
-.header .slogan {
+.header .slogan-wrapper {
+  padding: 60px 120px;
+  background: radial-gradient(50% 50% at 50% 50%, #130A0B 0%, rgba(19, 10, 11, 0) 100%);
+}
+
+.header .slogan-wrapper .slogan {
   margin: 0 auto;
   text-align: center;
   width: 640px;
@@ -130,11 +135,14 @@ body a {
   line-height: 150%;
   color: #FFF9EF;
   margin-bottom: 32px;
+}
+
+.header .time_work-wrapper {
+  padding: 30px 145px 60px;
   background: radial-gradient(50% 50% at 50% 50%, #130A0B 0%, rgba(19, 10, 11, 0) 100%);
 }
 
-.header .time_work {
-  background: radial-gradient(50% 50% at 50% 50%, #130A0B 0%, rgba(19, 10, 11, 0) 100%);
+.header .time_work-wrapper .time_work {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,11 +161,11 @@ body a {
   padding-bottom: 75px;
 }
 
-.header .time_work .date {
+.header .time_work-wrapper .time_work .date {
   width: 100%;
 }
 
-.header .time_work .date .time {
+.header .time_work-wrapper .time_work .date .time {
   font-weight: 300;
 }
 
@@ -282,6 +290,7 @@ body a {
 }
 
 .event .wraper .post .info__title {
+  font-family: "Prata", serif;
   font-size: 22px;
 }
 
